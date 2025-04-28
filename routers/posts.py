@@ -19,3 +19,8 @@ def get_all_posts(db: Session = Depends(get_db)):
 @router.post("/", response_model=PostDisplay)
 def create_post(post: PostBase, db: Session = Depends(get_db)):
     return db_post.create_post(post, db)
+
+
+@router.delete("/{id}")
+def delete_post(id: int, db: Session = Depends(get_db)):
+    return db_post.delete_post(id, db)
