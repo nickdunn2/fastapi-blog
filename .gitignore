@@ -1,2 +1,6 @@
 .venv/*
 __pycache__/*
+
+# Database
+blog_api.db
+db/__pycache__/*
