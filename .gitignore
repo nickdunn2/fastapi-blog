@@ -3,4 +3,4 @@ __pycache__/*
 
 # Database
 blog_api.db
-db/__pycache__/*
+*/__pycache__/*
