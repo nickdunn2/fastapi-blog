@@ -41,5 +41,5 @@ def upload_image(image: UploadFile = File(...)):
         shutil.copyfileobj(image.file, buffer)
 
     return {
-        "filename": path
+        "filename": filename
     }
